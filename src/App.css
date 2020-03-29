@@ -1,38 +1,71 @@
+body {
+  background-color: rgba(34, 51, 68, 0.849);
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
   color: white;
+  font-size: 30px;
+  background-color: #234;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header .creator {
+  font-size: 14px;
+  color: silver;
+  float: right;
+  padding: 8px 8px 0 0;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  margin-top: 10px;
+  background-color: rgba(34, 51, 68, 0.76);
+  font-size: 22px;
+  color: gray;
+  border: 2px solid rgba(34, 51, 68, 0.452);
+  padding-left: 10px;
+}
+
+.table {
+  color: white;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+.country {
+  background-color: #234;
+  color: white;
+  font-size: 20px;
+  padding: 25px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px rgb(40, 53, 77);
+}
+
+.row {
+  margin: 0 -7.5px;
+}
+
+[class*="col-"] {
+  padding: 0 7.5px;
+}
+
+.death,
+.recovered,
+.infection,
+.active {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(83, 107, 131, 0.753);
+}
+
+.death {
+  color: rgb(197, 0, 0);
+}
+
+.recovered {
+  color: rgb(1, 160, 1)
 }
