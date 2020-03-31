@@ -2,15 +2,16 @@ import React, { Fragment } from 'react';
 import * as data from './countrycode.json';
 
 const Country = ({countries}) => {
-    const countryflag = Object.keys(data).map((name) => {
-        return data[name][0];
-    })
+    // const countryflag = Object.keys(data).map((name) => {
+    //     return data[name][0];
+    // })
+    const countryflag = data[0];
     return (
         <Fragment>
             {
                 countries.map((country) => {
                     let days = country[1].length - 1;
-                    let source = `https://www.countryflags.io/${countryflag[0][country[0]]}/flat/64.png`;
+                    let source = `https://www.countryflags.io/${countryflag[country[0]]}/flat/64.png`;
                     return(
                         <div className="country col-md-4 col-md-offset-2" key={country[0]}>
                             <div className="countryName">{country[0]}</div>
