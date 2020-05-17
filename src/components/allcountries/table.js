@@ -15,7 +15,7 @@ const Search = ({ countries, search }) => {
                 <table className="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Countries Infected 🏳️‍🌈</th>
+                            <th>Countries Infected 🏳️‍</th>
                             <th>Confirmed Cases <i class='fas fa-lungs-virus' style={{ 'color': 'white' }}></i></th>
                             <th>Recovered 😎</th>
                             <th>Deaths 💀</th>
