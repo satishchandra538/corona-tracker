@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const Search = ({countries,search}) => {
+const Search = ({ countries, search }) => {
     let deaths = 0, confirmed = 0, recovered = 0, active = 0;
     for (let i = 0; i < countries.length; i++) {
         let days = countries[i][1].length - 1;
@@ -16,8 +16,8 @@ const Search = ({countries,search}) => {
                     <thead>
                         <tr>
                             <th>Countries Infected 🏳️‍🌈</th>
-                            <th>Confirmed Cases 🤒</th>
-                            <th>Recovered 🥳</th>
+                            <th>Confirmed Cases <i class='fas fa-lungs-virus' style={{ 'color': 'white' }}></i></th>
+                            <th>Recovered 😎</th>
                             <th>Deaths 💀</th>
                             <th>Active 😷</th>
                         </tr>

@@ -1,71 +1,17 @@
 body {
-  background-color: rgba(34, 51, 68, 0.849);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
 .App {
   text-align: center;
+  background-color: white;
 }
-
-.header {
-  color: white;
-  font-size: 30px;
-  background-color: #234;
-  text-align: center;
-}
-
-.header .creator {
-  font-size: 14px;
-  color: silver;
-  float: right;
-  padding: 8px 8px 0 0;
-  position: absolute;
-}
-
-.search {
-  margin-top: 10px;
-  background-color: rgba(34, 51, 68, 0.76);
-  font-size: 22px;
-  color: gray;
-  border: 2px solid rgba(34, 51, 68, 0.452);
-  padding-left: 10px;
-}
-
-.table {
-  color: white;
-  margin: 10px auto;
-  border-collapse: collapse;
-}
-
-.country {
-  background-color: #234;
-  color: white;
-  font-size: 20px;
-  padding: 25px;
-  margin-bottom: 10px;
-  box-shadow: 5px 5px 5px rgb(40, 53, 77);
-}
-
-.row {
-  margin: 0 -7.5px;
-}
-
-[class*="col-"] {
-  padding: 0 7.5px;
-}
-
-.death,
-.recovered,
-.infection,
-.active {
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(83, 107, 131, 0.753);
-}
-
-.death {
-  color: rgb(197, 0, 0);
-}
-
-.recovered {
-  color: rgb(1, 160, 1)
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+  margin:0;
+  overflow-x: hidden;
 }

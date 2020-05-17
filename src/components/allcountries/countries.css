@@ -1,0 +1,104 @@
+.header {
+    color: white;
+    font-size: 30px;
+    background-color: #234;
+    text-align: center;
+    height: 60px;
+}
+
+.header .creator {
+    font-size: 14px;
+    color: rgb(214, 214, 214);
+    float: right;
+    padding: 8px 8px 0 0;
+    position: absolute;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-bar {
+    background-color: rgba(34, 51, 68, 0.534);
+    height: 3.5rem;
+}
+
+.navigation-bar a {
+    color: white;
+    font-size: 700;
+    width: 100vw;
+    padding: 0.8rem 1rem;
+    margin-left: 2px;
+    background-color: inherit;
+    transition: all 0.5s;
+}
+
+.navigation-bar a:hover {
+    text-decoration: none;
+    background-color: rgba(34, 51, 68, 0.116);
+    transition: all 0.5s;
+}
+
+.search {
+    margin-top: 10px;
+    background-color: rgba(78, 128, 151, 0.185);
+    font-size: 22px;
+    color: rgb(36, 36, 36);
+    border: 2px solid rgba(85, 107, 129, 0.452);
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.search:focus{
+    box-shadow: inset 2px 2px 3px rgba(47, 58, 70, 0.452),
+                inset -2px -2px 3px rgb(255, 255, 255);
+    outline: none;
+}
+
+.table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: #234;
+    color:white;
+}
+
+.country {
+    background-color: #234;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgb(40, 53, 77);
+}
+
+.row {
+    margin: 0 -7.5px;
+}
+
+[class*="col-"] {
+    padding: 0 7.5px;
+}
+
+.death,
+.recovered,
+.infection,
+.active {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(83, 107, 131, 0.753);
+}
+
+.death {
+    color: rgb(197, 0, 0);
+}
+
+.recovered {
+    color: rgb(1, 160, 1)
+}
+@media (max-width: 600px){
+    .header{
+        font-size: 20px;
+    }
+    .header .creator{
+        font-size: 10px;
+    }
+}
