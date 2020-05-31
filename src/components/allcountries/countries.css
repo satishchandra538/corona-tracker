@@ -1,7 +1,7 @@
 .header {
     color: white;
     font-size: 30px;
-    background-color: #234;
+    background-color: rgb(28, 41, 87);
     text-align: center;
     height: 60px;
 }
@@ -20,7 +20,7 @@ nav {
 }
 
 .navigation-bar {
-    background-color: rgba(34, 51, 68, 0.534);
+    background-color: rgba(28, 41, 87, 0.534);
     height: 3.5rem;
 }
 
@@ -36,7 +36,7 @@ nav {
 
 .navigation-bar a:hover {
     text-decoration: none;
-    background-color: rgba(34, 51, 68, 0.116);
+    background-color: rgba(28, 41, 87, 0.116);
     transition: all 0.5s;
 }
 
@@ -45,7 +45,7 @@ nav {
     background-color: rgba(78, 128, 151, 0.185);
     font-size: 22px;
     color: rgb(36, 36, 36);
-    border: 2px solid rgba(85, 107, 129, 0.452);
+    border: 2px solid rgba(28, 41, 87, 0.452);
     padding-left: 10px;
     border-radius: 5px;
 }
@@ -58,17 +58,17 @@ nav {
 .table {
     margin: 10px auto;
     border-collapse: collapse;
-    background-color: #234;
+    background-color: rgb(28, 41, 87);
     color:white;
 }
 
 .country {
-    background-color: #234;
+    background-color: rgb(28, 41, 87);
     color: white;
     font-size: 20px;
     padding: 25px;
     margin-bottom: 10px;
-    box-shadow: 5px 5px 5px rgb(40, 53, 77);
+    box-shadow: 5px 5px 5px rgb(58, 71, 119);
 }
 
 .row {
@@ -84,7 +84,7 @@ nav {
 .infection,
 .active {
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(83, 107, 131, 0.753);
+    border-bottom: 1px solid rgba(28, 41, 87, 0.753);
 }
 
 .death {
