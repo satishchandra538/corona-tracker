@@ -4,7 +4,7 @@ import './india.css';
 
 const India = ({ countries }) => {
 
-    let india = [], days, deathTotal = 0, confirmedTotal = 0, recoveredTotal = 0, deathToday = 0, recoveredToday = 0, confirmedToday = 0, dateToday = [], dateSeries = [], confirmedSeries = [], individualConfirmedSeries = [];
+    let india = [], days, deathTotal = 0, confirmedTotal = 0, recoveredTotal = 0, deathToday = 0, recoveredToday = 0, confirmedToday = 0, dateToday = [], dateSeries = [], confirmedSeries = [], individualConfirmedSeries = [],deathPercentage=0,recoveredPercentage=0,remainingPercentage=0;
 
     const [value, setValue] = useState(0); // integer state
     // update the state to force render
@@ -16,6 +16,9 @@ const India = ({ countries }) => {
             deathTotal = india[1][days - 1].deaths;
             confirmedTotal = india[1][days - 1].confirmed;
             recoveredTotal = india[1][days - 1].recovered;
+            deathPercentage = ((deathTotal * 100) / confirmedTotal).toFixed(2);
+            recoveredPercentage = ((recoveredTotal * 100) / confirmedTotal).toFixed(2);
+            remainingPercentage = (100 - deathPercentage - recoveredPercentage).toFixed(2);
             deathToday = india[1][days - 1].deaths - india[1][days - 2].deaths;
             confirmedToday = india[1][days - 1].confirmed - india[1][days - 2].confirmed;
             recoveredToday = india[1][days - 1].recovered - india[1][days - 2].recovered;
@@ -41,7 +44,7 @@ const India = ({ countries }) => {
 
 
     const overAllPatients = {
-        labels: ['infected', 'recovered', 'dead'],
+        labels: ['Remaining Percentage', 'Recovered percentage', 'Death percentage'],
         datasets: [
             {
                 label: 'Overall Status of death and recovery',
@@ -55,7 +58,7 @@ const India = ({ countries }) => {
                     'rgba(0, 128, 0, 0.8)',
                     'rgba(255, 0, 0, 0.8)'
                 ],
-                data: [confirmedTotal, recoveredTotal, deathTotal]
+                data: [remainingPercentage, recoveredPercentage, deathPercentage]
             }
         ]
     }
